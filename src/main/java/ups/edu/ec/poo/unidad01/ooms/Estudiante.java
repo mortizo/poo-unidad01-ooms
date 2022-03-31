@@ -6,7 +6,7 @@ package ups.edu.ec.poo.unidad01.ooms;
 
 /**
  *
- * @author morti
+ * @author Mauricio Ortiz
  */
 public class Estudiante {
     
@@ -42,6 +42,7 @@ public class Estudiante {
         retorno=(this.calificacion>=70)?true:false;
         
         return retorno;
+                
     }
     
     public double calcularImc()
