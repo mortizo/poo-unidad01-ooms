@@ -17,7 +17,7 @@ public class Estudiante {
     int altura;
     
     
-    public String equivalenciaCalificacion()
+    public String calcularEquivalenciaCalificacion()
     {
         var retorno="Insuficiente";
         
@@ -36,7 +36,7 @@ public class Estudiante {
         return retorno;
     }
     
-    public boolean aprobado(){
+    public boolean esAprobado(){
         var retorno=false;
         
         retorno=(this.calificacion>=70)?true:false;
@@ -58,5 +58,24 @@ public class Estudiante {
        
         return retorno;
     }
-   
+    
+    public String obtenerAreaConocimiento(){
+        var retorno="TBD";
+        
+        switch(this.carrera){
+            case "Computación":
+                retorno="Área de Ciencia y Tecnología";
+                break;
+            case "Psicología":
+                retorno="Áreas de Ciencias Humanas";
+                break;
+            case "Administración":
+                retorno="Área de Ciencias Administrativa";
+                break;
+            default:
+                retorno="Área no definida";
+        }
+        
+        return retorno;
+    }
 }
