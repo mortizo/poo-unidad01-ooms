@@ -5,6 +5,7 @@
 
 package ups.edu.ec.poo.unidad01.ooms;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -57,6 +58,8 @@ public class PooUnidad01Ooms {
             retorno = "A y B son iguales";
         }
         
+               
+        
         retorno = (a>b)?"A es mayor":"B es menor";
         
         retorno = (a>b)?"A es mayor":(b>a)?"B es mayor":"A y B son iguales";
@@ -72,4 +75,52 @@ public class PooUnidad01Ooms {
         }while(!(x.equals("salir")));
        
     }
+    
+    
+    public int suma (int p1, int p2)
+    {
+        return p1+p2;
+    }
+    
+    
+    public void calcularMayor3Numeros (int a, int b,int c)
+    {
+        var retorno="A y B son iguales";
+        if(a>b){
+            retorno = "A es mayor";
+        }else{
+            if(b>a)
+                retorno = "B es mayor";
+        }
+        
+        int temp;
+        String mensaje = "";
+        Random r = new Random();
+        temp = r.nextInt(55)-10;
+ 
+        if(temp<10){
+            mensaje = "Hace mucho frío.";
+        }
+        else{
+            if(temp<15){
+                mensaje = "Hace poco frío.";
+            }
+            else{
+                if(temp<25){
+                    mensaje = "Hace una temperatura normal.";
+                }
+                else{
+                    if(temp<30){
+                        mensaje = "Hace poco calor.";
+                    }
+                    else{
+                        mensaje = "Hace mucho calor.";
+                    }
+                }
+            }
+        }
+        System.out.printf("La temperatura actual es de %d grados.", temp);
+        System.out.println("\n" + mensaje);
+    }
+    
 }
