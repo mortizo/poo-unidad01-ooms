@@ -20,7 +20,7 @@ public class Principal {
         autoJuan.color="amarillo";
         autoJuan.marca="chevrolet";
         autoJuan.year= 2017;
-        autoJuan.placa="ABB 0102";
+        autoJuan.placa="UBB 0102";
         autoJuan.precio= 5000;
         
         System.out.println(autoJuan.color+" | "+
@@ -44,7 +44,9 @@ public class Principal {
         costoMatricula=autoJuan.calcularMatricula(2010, 10000);
         System.out.println("Debe pagar "+costoMatricula+" USD por concepto de matrícula");
         
-            
+        System.out.println("El auto es de la provincia de: "+autoJuan.obtenerProvincia());
+        
+        
     }
         
 }
