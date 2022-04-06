@@ -40,31 +40,9 @@ public class Principal {
        
         System.out.println(" El auto de precio "+ autoJuan.precio+ " Debe pagar de tasa solidaria "+ autoJuan.calcularTasaSolidaria());
         
-        var autoLuis = new Auto();
-        autoLuis.color="Blanco";
-        autoLuis.marca="Toyota";
-        autoLuis.year= 2019;
-        autoLuis.placa="ABD 567";
-        autoLuis.precio= 9000;
-        
-        System.out.println(autoLuis.color+" | "+
-                           autoLuis.marca+" | "+
-                           autoLuis.year+" | "+
-                           autoLuis.precio+" | "+
-                           autoLuis.placa+" | ");
-        
-        
-       
-        
-        esTaxi= autoLuis.esTaxi();
-        if(esTaxi==true){
-            System.out.println("El auto de placa"+autoLuis.placa+ " es un taxi");
-        }else{
-             System.out.println("El auto de placa"+autoLuis.placa+ " NO es un taxi");       
-        }
-        
-        
-        System.out.println("El auto de precio "+ autoLuis.precio+ " Debe pagar de tasa solidaria "+ autoLuis.calcularTasaSolidaria());
+        var costoMatricula=10000d;
+        costoMatricula=autoJuan.calcularMatricula(2010, 10000);
+        System.out.println("Debe pagar "+costoMatricula+" USD por concepto de matrícula");
         
             
     }

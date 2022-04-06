@@ -60,6 +60,35 @@ public class Auto {
         }
         return retorno;
     }
+    
+    public String obtenerProvincia(){
+        var retorno="TBD";
+        var primerCaracterPlaca=this.placa.charAt(0);
+        switch(primerCaracterPlaca)
+        {
+            case 'A':
+                retorno="Azuay";
+                break;
+            case 'B':
+                retorno="Bolivar";
+                break;
+            case 'C':
+                retorno="Carchi";
+                break;
+            case 'U':
+                retorno="Cañar";
+                break;
+            case 'G':
+                retorno="Guayas";
+                break;
+            case 'P':
+                retorno="Pichincha";
+                break;
+            default:
+                retorno="Provincia no disponible";
+        }
+        return retorno;
+    }  
 }
 
    
