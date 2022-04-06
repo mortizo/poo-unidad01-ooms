@@ -18,6 +18,10 @@ public class PooUnidad01Ooms {
         System.out.println("Hola Mundo");
         System.out.println("Hola Ecuador");
         
+        
+        
+        
+        
         var a=5;
         var b=10;
  
@@ -35,7 +39,6 @@ public class PooUnidad01Ooms {
         if(b>a){    
             retorno = "B es mayor";
         }
-        
         
         if(a>b){    
             retorno = "A es mayor";
@@ -64,7 +67,7 @@ public class PooUnidad01Ooms {
         
         retorno = (a>b)?"A es mayor":(b>a)?"B es mayor":"A y B son iguales";
         
-        
+      /*  
         var read = new Scanner(System.in);
         var x="";
         
@@ -73,7 +76,7 @@ public class PooUnidad01Ooms {
             System.out.println("Ingrese un texto");
             x=read.next();
         }while(!(x.equals("salir")));
-       
+       */
     }
     
     
