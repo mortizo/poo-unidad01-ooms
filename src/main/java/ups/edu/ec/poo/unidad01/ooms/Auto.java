@@ -90,7 +90,72 @@ public class Auto {
         return retorno;
     }  
     
+    public int calcularYears(int currentYear){
+        var retorno=1000;
+        retorno=currentYear-this.year;
+        return retorno;
+    }
     
+    public boolean sePuedeAsegurar(int currentYear, int edadMaxima){
+        var retorno=false;
+        if(this.calcularYears(currentYear)<=edadMaxima)
+            retorno=true;
+        return retorno;
+    }
+    
+    public boolean esProvinciaDe(String provincia)
+    {
+        var retorno=false;
+        var primeraLetraPlaca=this.placa.substring(0, 1);
+        
+        if(provincia=="Azuay" && primeraLetraPlaca=="A")
+            retorno=true;
+        if(provincia=="Guayas" && primeraLetraPlaca=="G")
+            retorno=true;
+        if(provincia=="Cañar" && primeraLetraPlaca=="U")
+            retorno=true;
+        if(provincia=="Pichincha" && primeraLetraPlaca=="P")
+            retorno=true;
+        
+        return retorno;
+    }
+    
+    
+    
+    
+    public boolean esNumeros(String cadena){
+        boolean retorno=true;
+        if(cadena.length()==4)
+        {
+            if(!Character.isDigit(cadena.charAt(0)))
+                retorno=false;
+            if(!Character.isDigit(cadena.charAt(1)))
+                retorno=false;
+            if(!Character.isDigit(cadena.charAt(2)))
+                retorno=false;
+            if(!Character.isDigit(cadena.charAt(3)))
+                retorno=false;
+        }else{
+            retorno=false;
+        }
+        return retorno;
+    }
+    
+    public boolean esLetras(String cadena){
+        boolean retorno=true;
+        if(cadena.length()==3)
+        {
+            if(!Character.isAlphabetic(cadena.charAt(0)))
+                retorno=false;
+            if(!Character.isAlphabetic(cadena.charAt(1)))
+                retorno=false;
+            if(!Character.isAlphabetic(cadena.charAt(2)))
+                retorno=false;
+        }else{
+            retorno=false;
+        }
+        return retorno;
+    }
     
 }
 

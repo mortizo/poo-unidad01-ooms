@@ -14,7 +14,59 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        /*        
+        var arreglo = new int[5];
+        arreglo[0]=10;
+        arreglo[1]=20;
+        arreglo[2]=30;
+        arreglo[3]=40;
+        arreglo[4]=50;
+        var i=0;
+        while(i<arreglo.length){
+            System.out.println(arreglo[i]);
+            i++;
+        }
+        for(i=0; i<arreglo.length; i++){
+            System.out.println(arreglo[i]*10);
+        }
+        for(var x:arreglo){
+            System.out.println(x*100);
+        }
+        */
+        
+        var matriz = new int[2][3];
+        matriz[0][0]=00;
+        matriz[0][1]=01;
+        matriz[0][2]=02;
+        matriz[1][0]=10;
+        matriz[1][1]=11;
+        matriz[1][2]=12;     
+        var i=0;
+        while(i<matriz.length){
+            var j=0;
+            while(j<matriz[i].length){
+                System.out.println(matriz[i][j]);
+                j++;
+            }
+            i++;
+        }
+        for(i=0; i<matriz.length; i++){
+            for(var j=0; j<matriz[i].length; j++){
+                System.out.println(matriz[i][j]*10);
+            }    
+        }
+        for(int x[]:matriz){
+            for(var y:x){
+                System.out.println(y*100);
+            }    
+        }
+            
+        System.out.println(Character.isDigit('2'));
+        System.out.println(Character.isAlphabetic('C'));
+        
+        
+        
+    
         
         var autoJuan = new Auto();
         autoJuan.color="amarillo";
@@ -29,7 +81,6 @@ public class Principal {
                            autoJuan.precio+" | "+
                            autoJuan.precio+" | ");
         
-        ////System.out.println("Es taxi;"+autoJuan.esTaxi());
         var esTaxi=false;
         esTaxi= autoJuan.esTaxi();
         if(esTaxi==true){
