@@ -14,7 +14,7 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        /*        
+           
         var arreglo = new int[5];
         arreglo[0]=10;
         arreglo[1]=20;
@@ -32,7 +32,7 @@ public class Principal {
         for(var x:arreglo){
             System.out.println(x*100);
         }
-        */
+        
         
         var matriz = new int[2][3];
         matriz[0][0]=00;
@@ -41,7 +41,7 @@ public class Principal {
         matriz[1][0]=10;
         matriz[1][1]=11;
         matriz[1][2]=12;     
-        var i=0;
+     
         while(i<matriz.length){
             var j=0;
             while(j<matriz[i].length){
@@ -63,11 +63,7 @@ public class Principal {
             
         System.out.println(Character.isDigit('2'));
         System.out.println(Character.isAlphabetic('C'));
-        
-        
-        
-    
-        
+             
         var autoJuan = new Auto();
         autoJuan.color="amarillo";
         autoJuan.marca="chevrolet";

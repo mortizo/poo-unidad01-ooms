@@ -97,10 +97,7 @@ public class Auto {
     }
     
     public boolean sePuedeAsegurar(int currentYear, int edadMaxima){
-        var retorno=false;
-        if(this.calcularYears(currentYear)<=edadMaxima)
-            retorno=true;
-        return retorno;
+        return this.calcularYears(currentYear)<=edadMaxima;
     }
     
     public boolean esProvinciaDe(String provincia)
