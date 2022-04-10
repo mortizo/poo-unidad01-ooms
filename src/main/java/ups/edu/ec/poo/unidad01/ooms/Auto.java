@@ -96,7 +96,7 @@ public class Auto {
         return retorno;
     }
     
-    public boolean sePuedeAsegurar(int currentYear, int edadMaxima){
+    private boolean sePuedeAsegurar(int currentYear, int edadMaxima){
         return this.calcularYears(currentYear)<=edadMaxima;
     }
     

@@ -4,14 +4,33 @@
  */
 package ups.edu.ec.poo.unidad01.ooms;
 
+import java.util.Date;
+
 /**
  *
  * @author morti
  */
-public class Persona {
+
+
+public abstract class Persona {
     
+    private String cedula;
     private String nombre;
-    private int edad;
+    private int yearNacimiento;
+    
+    public abstract String obtenerInformacion();
+    
+    public int obtieneEdad(int yearActual){
+        return yearActual - this.yearNacimiento;
+    }
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
 
     public String getNombre() {
         return nombre;
@@ -21,12 +40,13 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public int getEdad() {
-        return edad;
+    public int getYearNacimiento() {
+        return yearNacimiento;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void setYearNacimiento(int yearNacimiento) {
+        this.yearNacimiento = yearNacimiento;
     }
     
 }
+
