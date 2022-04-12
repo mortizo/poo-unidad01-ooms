@@ -118,12 +118,9 @@ public class Auto {
     }
     
     
-    
-    
     public boolean esNumeros(String cadena){
         boolean retorno=true;
-        if(cadena.length()==4)
-        {
+        if(cadena.length()==4){
             if(!Character.isDigit(cadena.charAt(0)))
                 retorno=false;
             if(!Character.isDigit(cadena.charAt(1)))
@@ -150,6 +147,19 @@ public class Auto {
                 retorno=false;
         }else{
             retorno=false;
+        }
+        return retorno;
+    }
+    
+    public boolean esNLetras(String cadena){
+        var retorno=true;
+        var i=0; 
+        var cList = new char[cadena.length()];
+        while(i<cadena.length()){
+            cList[i]=cadena.charAt(i);
+            if(!Character.isAlphabetic(cList[i]))
+                retorno=false;
+            i++;
         }
         return retorno;
     }
