@@ -10,12 +10,19 @@ package ups.edu.ec.poo.unidad01.ooms;
  */
 public class Estudiante {
     
-    String nombre;
-    int calificacion;
-    String carrera;
-    double peso;
-    int altura;
-    
+    private String nombre;
+    private int calificacion;
+    private String carrera;
+    private double peso;
+    private int altura;
+
+    public Estudiante(String nombre, int calificacion, String carrera, double peso, int altura) {
+        this.nombre = nombre;
+        this.calificacion = calificacion;
+        this.carrera = carrera;
+        this.peso = peso;
+        this.altura = altura;
+    }
     
     public String calcularEquivalenciaCalificacion()
     {
@@ -79,4 +86,47 @@ public class Estudiante {
         
         return retorno;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getCalificacion() {
+        return calificacion;
+    }
+
+    public void setCalificacion(int calificacion) {
+        this.calificacion = calificacion;
+    }
+
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+    
+    
+    
 }
