@@ -12,13 +12,15 @@ import java.util.Date;
  */
 
 
-public abstract class Persona {
+public class Persona {
     
     private String cedula;
     private String nombre;
     private int yearNacimiento;
     
-    public abstract String obtenerInformacion();
+    public String obtenerInformacion() {
+        return "El empleado se llama"+this.getNombre();
+    }
     
     public int obtieneEdad(int yearActual){
         return yearActual - this.yearNacimiento;

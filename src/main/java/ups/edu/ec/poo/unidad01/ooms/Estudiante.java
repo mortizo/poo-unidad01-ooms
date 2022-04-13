@@ -24,7 +24,7 @@ public class Estudiante {
         this.peso = peso;
         this.altura = altura;
     }
-    
+       
     public String calcularEquivalenciaCalificacion()
     {
         var retorno="Insuficiente";

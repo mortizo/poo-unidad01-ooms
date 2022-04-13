@@ -49,4 +49,22 @@ public class Arreglo {
         return retorno;
     }
     
+    public double [] sumarVector(double[] v1, double[] v2){
+        var retorno = new double [v1.length];
+        for(var i=0;i<retorno.length;i++)
+        {
+            retorno[i]=v1[i]+v2[i];
+        }
+        return retorno;
+    }
+    public float [] sumarVector(float[] v1, float[] v2){
+        var retorno = new float [v1.length];
+        for(var i=0;i<retorno.length;i++)
+        {
+            retorno[i]=v1[i]+v2[i];
+        }
+        return retorno;
+    }
+            
+    
 }

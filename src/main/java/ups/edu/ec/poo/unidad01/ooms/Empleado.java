@@ -14,7 +14,7 @@ public class Empleado extends Persona{
 
     @Override
     public String obtenerInformacion() {
-        return "El empleado se llama"+this.getNombre()+
+        return super.obtenerInformacion()+
                 " y el sueldo es "+this.sueldo;
     }
 
