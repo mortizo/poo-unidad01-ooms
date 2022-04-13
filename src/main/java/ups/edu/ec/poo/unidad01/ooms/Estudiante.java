@@ -16,7 +16,8 @@ public class Estudiante {
     private double peso;
     private int altura;
 
-    public Estudiante(String nombre, int calificacion, String carrera, double peso, int altura) {
+    public Estudiante(String nombre, int calificacion, 
+            String carrera, double peso, int altura) {
         this.nombre = nombre;
         this.calificacion = calificacion;
         this.carrera = carrera;
