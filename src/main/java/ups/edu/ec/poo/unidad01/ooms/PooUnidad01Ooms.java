@@ -5,6 +5,8 @@
 
 package ups.edu.ec.poo.unidad01.ooms;
 
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -19,7 +21,9 @@ public class PooUnidad01Ooms {
         System.out.println("Hola Ecuador");
         
         
-        
+        var p= new Persona();
+        p.setYearNacimiento(LocalDate.of(1981, 9, 22));
+        System.out.println(p.getYearNacimiento().getYear());
         
         
         var a=5;

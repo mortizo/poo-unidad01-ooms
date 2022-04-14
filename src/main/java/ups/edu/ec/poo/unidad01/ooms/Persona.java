@@ -4,7 +4,7 @@
  */
 package ups.edu.ec.poo.unidad01.ooms;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 /**
  *
@@ -16,14 +16,14 @@ public class Persona {
     
     private String cedula;
     private String nombre;
-    private int yearNacimiento;
+    private LocalDate yearNacimiento;
     
     public String obtenerInformacion() {
         return "El empleado se llama"+this.getNombre();
     }
     
     public int obtieneEdad(int yearActual){
-        return yearActual - this.yearNacimiento;
+        return yearActual - this.yearNacimiento.getYear();
     }
 
     public String getCedula() {
@@ -42,13 +42,13 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public int getYearNacimiento() {
+    public LocalDate getYearNacimiento() {
         return yearNacimiento;
     }
 
-    public void setYearNacimiento(int yearNacimiento) {
+    public void setYearNacimiento(LocalDate yearNacimiento) {
         this.yearNacimiento = yearNacimiento;
     }
-    
+  
 }
 
