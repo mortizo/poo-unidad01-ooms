@@ -23,6 +23,8 @@ public class PooUnidad01Ooms {
         
         var p= new Persona();
         p.setYearNacimiento(LocalDate.of(1981, 9, 22));
+        p.setYearNacimiento(LocalDate.now());
+        
         System.out.println(p.getYearNacimiento().getYear());
         
         
