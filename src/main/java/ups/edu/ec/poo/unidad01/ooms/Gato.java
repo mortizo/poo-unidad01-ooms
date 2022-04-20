@@ -13,6 +13,24 @@ public class Gato extends AnimalDomestico{
     private int numeroVidas;
     private int numeroAccidentesFatales;
     
+    //Constructores
+
+    public Gato(int numeroVidas, int numeroAccidentesFatales) {
+        this.numeroVidas = numeroVidas;
+        this.numeroAccidentesFatales = numeroAccidentesFatales;
+    }
+    
+    public Gato(int numeroVidas) {
+        this.numeroVidas = numeroVidas;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     public int calcularVidasRestantes(){
         return this.numeroVidas-this.numeroAccidentesFatales;
     }

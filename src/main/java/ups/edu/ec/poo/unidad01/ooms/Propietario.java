@@ -14,6 +14,8 @@ public class Propietario {
     String telefono;
     String direccion;
     
+    
+    
     public boolean esCelular()
     {
         return true;

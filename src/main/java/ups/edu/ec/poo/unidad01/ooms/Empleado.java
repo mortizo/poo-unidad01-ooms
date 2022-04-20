@@ -4,6 +4,8 @@
  */
 package ups.edu.ec.poo.unidad01.ooms;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author morti
@@ -11,6 +13,15 @@ package ups.edu.ec.poo.unidad01.ooms;
 public class Empleado extends Persona{
     
     private double sueldo;
+
+    public Empleado(double sueldo, String cedula, String nombre, LocalDate yearNacimiento) {
+        super(cedula, nombre, yearNacimiento);
+        this.sueldo = sueldo;
+    }
+
+    
+    
+    
 
     @Override
     public String obtenerInformacion() {

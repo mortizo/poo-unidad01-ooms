@@ -13,6 +13,7 @@ public class AnimalDomestico extends Animal{
     private String propietario;
 
     
+    
     //Getters & Setters
     
     public String getPropietario() {

@@ -17,6 +17,14 @@ public class Persona {
     private String cedula;
     private String nombre;
     private LocalDate yearNacimiento;
+
+    public Persona(String cedula, String nombre, LocalDate yearNacimiento) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.yearNacimiento = yearNacimiento;
+    }
+    
+    
     
     public String obtenerInformacion() {
         return "El empleado se llama"+this.getNombre();
