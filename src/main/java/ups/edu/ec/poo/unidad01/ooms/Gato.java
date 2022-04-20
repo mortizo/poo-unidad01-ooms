@@ -8,7 +8,7 @@ package ups.edu.ec.poo.unidad01.ooms;
  *
  * @author morti
  */
-public class Gato extends Animal{
+public class Gato extends AnimalDomestico{
     
     private int numeroVidas;
     private int numeroAccidentesFatales;
