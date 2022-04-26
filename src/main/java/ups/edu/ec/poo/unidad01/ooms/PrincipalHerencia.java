@@ -4,6 +4,8 @@
  */
 package ups.edu.ec.poo.unidad01.ooms;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author morti
@@ -11,7 +13,7 @@ package ups.edu.ec.poo.unidad01.ooms;
 public class PrincipalHerencia {
     
     public static void main(String [] args){
-    
+        
         var gatoMama = new Gato(7);
         
         gatoMama.setColor("plomo");
@@ -21,9 +23,14 @@ public class PrincipalHerencia {
         gatoMama.setYearNacimiento(2017);
         
         
-        System.out.println(gatoMama.getNombre());
-        System.out.println(gatoMama.calcularVidasRestantes());
-        System.out.println(gatoMama.getPropietario());
+        
+        var guardia = new GuardiaNocturno(6,"0103667754","Mauricio Ortiz",
+                LocalDate.of(1981, 9, 22));
+        var empleado = new Empleado("0103667754","Mauricio Ortiz",
+                LocalDate.of(1981, 9, 22));
+        
+        System.out.println(guardia.calcularSueldo());
+        System.out.println(empleado.calcularSueldo());
         
         
         

@@ -10,25 +10,17 @@ import java.time.LocalDate;
  *
  * @author morti
  */
-public class Empleado extends Persona{
+public class Guardia extends Persona {
 
-    public Empleado(String cedula, String nombre, LocalDate yearNacimiento) {
+    public Guardia(String cedula, String nombre, LocalDate yearNacimiento) {
         super(cedula, nombre, yearNacimiento);
     }
 
     @Override
     public double calcularSueldo() {
-        return 2000;
+        return 1500;
     }
     
     
-
     
-
-    
-    
-    
-
-
 }
-

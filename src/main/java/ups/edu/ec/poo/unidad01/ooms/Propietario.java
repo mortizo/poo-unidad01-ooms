@@ -19,6 +19,11 @@ public class Propietario {
     public boolean esCelular()
     {
         return true;
+        
+        
+                  
+        
+        
     }
     
     public boolean esTelefonoValido()

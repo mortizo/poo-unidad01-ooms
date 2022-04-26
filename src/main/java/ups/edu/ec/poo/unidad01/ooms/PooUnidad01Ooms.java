@@ -21,8 +21,10 @@ public class PooUnidad01Ooms {
         System.out.println("Hola Ecuador");
         
         
-        var p= new Persona("0103667754","Mauricio Ortiz",
+        var p= new Guardia("0103667754","Mauricio Ortiz",
                 LocalDate.of(1981, 9, 22));
+        
+        p.calcularSueldo();
         
         p.setYearNacimiento(LocalDate.now());
         

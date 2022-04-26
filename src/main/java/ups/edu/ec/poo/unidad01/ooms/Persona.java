@@ -12,7 +12,7 @@ import java.time.LocalDate;
  */
 
 
-public class Persona {
+public abstract class Persona {
     
     private String cedula;
     private String nombre;
@@ -24,6 +24,8 @@ public class Persona {
         this.yearNacimiento = yearNacimiento;
     }
     
+    
+    public abstract double calcularSueldo();
     
     
     public String obtenerInformacion() {
