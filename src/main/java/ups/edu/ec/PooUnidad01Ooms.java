@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
-package ups.edu.ec.poo.unidad01.ooms;
+package ups.edu.ec;
 
 import java.time.LocalDate;
 import java.time.Month;
