@@ -22,7 +22,8 @@ public class Asignatura {
     
     String mostrarInformacion(){
         var retorno="La asignatura es: "+this.nombre+" el docente es: "
-                +this.nombreDocente+ " la asignatura cuesta: "+this.calcularCosto();
+                +this.nombreDocente+ " la asignatura cuesta: "
+                +this.calcularCosto();
         return retorno;
     }
     
