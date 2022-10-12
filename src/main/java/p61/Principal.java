@@ -11,7 +11,6 @@ package p61;
 public class Principal {
     
     public static void main(String [] args){
-        System.out.println("Hola mundo");
         var progra = new Asignatura();
         progra.codigo=1;
         progra.costoHora=3.5;
@@ -22,6 +21,13 @@ public class Principal {
         
         System.out.println(progra.mostrarInformacion());
         
+        var auto1 = new Auto();
+        auto1.placa="ABF8592";
+        auto1.marca="Chevrolet";
+        auto1.nombrePropietario="Juana Moreno";
+        
     }
+    
+    
     
 }
