@@ -15,8 +15,8 @@ public class Auto {
     String nombrePropietario;
 
     public String mostrarInfo() {
-        var retorno = " El auto tiene placa: "+this.placa+" es de marca: "
-                +this.marca+" y el propietario es: "+this.nombrePropietario;
+        var retorno = " El auto tiene placa: " + this.placa + " es de marca: "
+                + this.marca + " y el propietario es: " + this.nombrePropietario;
 
         return retorno;
     }
@@ -29,7 +29,15 @@ public class Auto {
 
     public String getPaisMarca() {
         var retorno = "";
-
+        if (this.marca.equals("Chevrolet")) {
+            retorno = "EE.UU";
+        } else {
+            if (this.marca.equals("Toyota")) {
+                retorno = "Japón";
+            } else {
+                retorno = "No definido";
+            }
+        }
         return retorno;
     }
 
