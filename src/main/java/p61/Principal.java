@@ -33,6 +33,8 @@ public class Principal {
         
         System.out.println(auto1.mostrarInfo()+" el país de origen de la marca es "+auto1.getPaisMarca());
         System.out.println("La provincia de matrícula es: "+auto1.getProvincia());
+        System.out.println("El número de continente es: "+auto1.getNumeroContinente());
+        System.out.println("El auto tiene "+auto1.calcularEdad(2022)+" años");
         
         var auto2 = new Auto();
         auto2.placa="GDX0422";
@@ -44,6 +46,10 @@ public class Principal {
         
         System.out.println(auto2.mostrarInfo()+" el país de origen de la marca es "+auto2.getPaisMarca());
         System.out.println("La provincia de matrícula es: "+auto2.getProvincia());
+        System.out.println("El número de continente es: "+auto2.getNumeroContinente());
+        System.out.println("El auto tiene "+auto2.calcularEdad(2022)+" años");
+        
+        
         
         
         var auto3 = new Auto();
@@ -56,6 +62,9 @@ public class Principal {
         
         System.out.println(auto3.mostrarInfo()+" el país de origen de la marca es "+auto3.getPaisMarca());
         System.out.println("La provincia de matrícula es: "+auto3.getProvincia());
+        System.out.println("El número de continente es: "+auto3.getNumeroContinente());
+        System.out.println("El auto tiene "+auto3.calcularEdad(2022)+" años");
+        
         
         
         

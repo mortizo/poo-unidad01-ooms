@@ -63,8 +63,76 @@ public class Auto {
     }
 
     public int getNumeroContinente() {
+        //1: Africa 2:America 3:Asia 4:Europa 5:Oceania
         var retorno = 0;
-
+        var marcaPais=this.getPaisMarca();
+        switch(marcaPais){
+            case "EE.UU":
+                retorno=2;
+                break;
+            case "Japón":
+                retorno=3;
+                break;
+            default:
+                retorno=0;
+        }
+        return retorno;
+    }
+    
+    public double calcularIVA(){
+        var retorno=0.0d;
+      
+        
+        return retorno;
+    }
+    
+    public int calcularEdad(int yearActual){
+        var retorno=0;    
+        
+        
+        return retorno;
+    }
+    
+    //10% por cada año de uso
+    //La depreciacion no puede exceder el precio
+    public double calcularDepreciacion(int yearActual){
+        var retorno=0.0d;
+        var edad=this.calcularEdad(yearActual);
+    
+        
+        return retorno;
+    }
+    
+    /*
+    Edad 0-5: 10% del precio
+    Edad 5-10: 8% del precio
+    Edad 10-15: 7% del precio
+    Edad >15: 6% del precio
+    */
+    
+    public double calcularCostoMatricula(int yearActual){
+        var retorno=0.0d;
+        var edad=this.calcularEdad(yearActual);
+    
+        
+        return retorno;
+    }
+    
+      /*
+    Edad 0-5 y precio menos de 10000 SI
+    Edad 10-15 y precio menos de 10000 a 20000 SI
+    Edad >15 y precio menos de 20000 a 30000 SI
+    Edad >15 NO
+     */
+    public boolean sePuedeAsegurar(int yearActual){
+        var retorno=false;
+        var edad=this.calcularEdad(yearActual);
+        if(edad<=5 && this.precio<10000)
+        {
+            retorno=true;
+        }else{
+            
+        }
         return retorno;
     }
 
