@@ -13,17 +13,38 @@ public class Auto {
     String placa;
     String marca;
     String nombrePropietario;
+    int year;
+    String color;
+    double precio;
 
     public String mostrarInfo() {
         var retorno = " El auto tiene placa: " + this.placa + " es de marca: "
-                + this.marca + " y el propietario es: " + this.nombrePropietario;
+                + this.marca + " y el propietario es: " + this.nombrePropietario
+                + " . El auto cuesta "+this.precio+ " USD y es modelo: " + this.year;
 
         return retorno;
     }
 
     public String getProvincia() {
         var retorno = "";
-
+        var primeraLetra="";
+        primeraLetra=this.placa.substring(0,1);
+        switch(primeraLetra){
+            case "A":
+                retorno="Azuay";
+                break;
+           case "P":
+                retorno="Pichincha";
+                break;
+           case "G":
+                retorno="Guayas";
+                break;
+            case "U":
+                retorno="Cañar";
+                break;
+            default:
+                retorno="Provincia no definida";
+        }
         return retorno;
     }
 

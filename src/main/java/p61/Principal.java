@@ -11,6 +11,7 @@ package p61;
 public class Principal {
     
     public static void main(String [] args){
+        /*
         var progra = new Asignatura();
         progra.codigo=1;
         progra.costoHora=3.5;
@@ -20,28 +21,41 @@ public class Principal {
         progra.vigente=true;
         
         System.out.println(progra.mostrarInformacion());
+*/
         
         var auto1 = new Auto();
         auto1.placa="ABF8592";
         auto1.marca="Chevrolet";
         auto1.nombrePropietario="Juana Moreno";
+        auto1.precio=15200;
+        auto1.color="Amarillo";
+        auto1.year=2017;
         
         System.out.println(auto1.mostrarInfo()+" el país de origen de la marca es "+auto1.getPaisMarca());
+        System.out.println("La provincia de matrícula es: "+auto1.getProvincia());
         
         var auto2 = new Auto();
-        auto2.placa="ADX0422";
+        auto2.placa="GDX0422";
         auto2.marca="Toyota";
         auto2.nombrePropietario="Mariana Ortiz";
+        auto2.color="Gris";
+        auto2.precio=25000;
+        auto2.year=2019;
         
         System.out.println(auto2.mostrarInfo()+" el país de origen de la marca es "+auto2.getPaisMarca());
+        System.out.println("La provincia de matrícula es: "+auto2.getProvincia());
         
         
         var auto3 = new Auto();
-        auto3.placa="ABH0025";
+        auto3.placa="UBH0025";
         auto3.marca="Jetour";
         auto3.nombrePropietario="Juan Ortiz";
+        auto3.color="Blanco";
+        auto3.precio=9000;
+        auto3.year=2004;
         
         System.out.println(auto3.mostrarInfo()+" el país de origen de la marca es "+auto3.getPaisMarca());
+        System.out.println("La provincia de matrícula es: "+auto3.getProvincia());
         
         
         
