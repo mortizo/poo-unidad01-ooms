@@ -16,6 +16,7 @@ public class Auto {
     int year;
     String color;
     double precio;
+    int cilindrajeMotor;
 
     public String mostrarInfo() {
         var retorno = " El auto tiene placa: " + this.placa + " es de marca: "
@@ -120,8 +121,8 @@ public class Auto {
     
       /*
     Edad 0-5 y precio menos de 10000 SI
-    Edad 10-15 y precio menos de 10000 a 20000 SI
-    Edad >15 y precio menos de 20000 a 30000 SI
+    Edad 10-15 y precio de 10000 a 20000 SI
+    Edad >15 y precio de 20000 a 30000 SI
     Edad >15 NO
      */
     public boolean sePuedeAsegurar(int yearActual){
@@ -133,6 +134,50 @@ public class Auto {
         }else{
             
         }
+        return retorno;
+    }
+    
+    public boolean esClasico(int yearActual, int yearClasico){
+        var retorno=false;
+        
+        return retorno;
+    }
+    
+    /*
+    Edad 0-5 y cilindraje < 1500 : tasa solidaria 15% costo
+    Edad 0-5 y cilindraje > 1500 < 2000 : tasa solidaria 20% costo
+    Edad 0-5 y cilindraje > 2000 : tasa solidaria 25% costo
+    Edad 5-15 y cilindraje < 1500 : tasa solidaria 10% costo
+    Edad 5-15 y cilindraje > 1500 < 2000 : tasa solidaria 15% costo
+    Edad 5-15 y cilindraje > 2000 : tasa solidaria 18% costo
+    Edad 15-20 : tasa solidaria 5%
+    Edad >20 : tasa solidaria 0
+    */
+    
+    //g1 y g2 Auto 7años, 1600cc, 18000USD = 2700USD
+    //g3 y g8 Auto 4años, 1000cc, 8000USD = 1200USD
+    //g3 y g9 Auto 16años, 2000cc, 10000USD = 5000USD
+    //g4 y g10 Auto 8años, 3600cc, 17000USD = 3060USD
+    //g5 y g11 Auto 9años, 1200cc, 1100USD = 110 USD
+    //g6 y g12 Auto 21años, 1000cc, 14000USD = 0 USD
+    //g7 y g13 Auto 19años, 24000cc, 16000USD = 
+    
+    
+    public double calcularTasaSolidaria(int yearActual, double limitePrecio){
+        var retorno=0.0d;
+        
+        return retorno;
+    }
+    
+    public boolean esPlacaValida(){
+        var retorno=false;
+        var longitud=this.placa.length();
+        if(longitud==7){
+
+            
+            
+        }
+        
         return retorno;
     }
 
