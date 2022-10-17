@@ -152,6 +152,7 @@ public class Auto {
     Edad 5-15 y cilindraje > 2000 : tasa solidaria 18% costo
     Edad 15-20 : tasa solidaria 5%
     Edad >20 : tasa solidaria 0
+    En cualquier Caso existe un límte de pago de tasa solidaria que no se podría superar.
     */
     
     //g1 y g2 Auto 7años, 1600cc, 18000USD = 2700USD
@@ -163,7 +164,7 @@ public class Auto {
     //g7 y g13 Auto 19años, 24000cc, 16000USD = 
     
     
-    public double calcularTasaSolidaria(int yearActual, double limitePrecio){
+    public double calcularTasaSolidaria(int yearActual, double limiteTasaSolidaria){
         var retorno=0.0d;
         
         return retorno;
@@ -173,9 +174,15 @@ public class Auto {
         var retorno=false;
         var longitud=this.placa.length();
         if(longitud==7){
-
+            var caracter1=this.placa.charAt(0);
+            var caracter2=this.placa.charAt(1);
+            var caracter3=this.placa.charAt(2);
+            var caracter4=this.placa.charAt(3);
+            var caracter5=this.placa.charAt(4);
+            var caracter6=this.placa.charAt(5);
+            var caracter7=this.placa.charAt(6);
             
-            
+      
         }
         
         return retorno;
