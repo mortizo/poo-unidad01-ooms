@@ -17,7 +17,7 @@ public class Animal {
     private String color;
     protected String raza;
     
-    public int calcularEdad(){
+    public int calcularEdad(){               
         return LocalDate.now().getYear()-this.yearNacimiento;
     }
     
