@@ -73,6 +73,47 @@ public class PrincipalUnidad0103 {
         }
  
         
+        System.out.println("Ingresar la dimensión del arreglo unidimensional o arreglo");
+        var lectura = new Scanner(System.in);
+        var dimension = lectura.nextInt();
+        
+        var arreglo = new int[dimension];
+        
+        for (var i = 0; i < arreglo.length; i++) {
+            System.out.println("Ingresar el número de la posición "+(i+1));
+            arreglo[i] = lectura.nextInt();
+        }
+        
+        for (int i = 0; i < arreglo.length; i++) {
+            System.out.println(arreglo[i]);
+        }
+        
+        
+        System.out.println("Ingrese el número de filas que tendrá la matriz");
+        var filas = lectura.nextInt();
+        System.out.println("Ingrese el número de columnas que tendrá la matriz");
+        var columnas = lectura.nextInt();
+        
+        var matriz = new int [2][3];
+        
+        System.out.println("Ingrese el valor correspondiente a la posición 0,0");
+        matriz [0][0] = lectura.nextInt();
+        System.out.println("Ingrese el valor correspondiente a la posición 0,1");
+        matriz [0][1] = lectura.nextInt();
+        System.out.println("Ingrese el valor correspondiente a la posición 0,2");
+        matriz [0][2] = lectura.nextInt();
+        System.out.println("Ingrese el valor correspondiente a la posición 1,0");
+        matriz [1][0] = lectura.nextInt();
+        System.out.println("Ingrese el valor correspondiente a la posición 1,1");
+        matriz [1][1] = lectura.nextInt();
+        System.out.println("Ingrese el valor correspondiente a la posición 1,2");
+        matriz [1][2] = lectura.nextInt();
+        
+        System.out.println(matriz [0][0]+" "+matriz [0][1]+" "+matriz [0][2]);
+        System.out.println(matriz [1][0]+" "+matriz [1][1]+" "+matriz [1][2]);
+        
+        
+        
     }
 
 }
