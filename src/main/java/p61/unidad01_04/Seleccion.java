@@ -10,9 +10,10 @@ package p61.unidad01_04;
  */
 public class Seleccion {
     
-    String codigoFIFA;
-    String nombre;
-    int participacionesMundial;
+    private String codigoFIFA;
+    private String nombre;
+    private int participacionesMundial;
+    private DirectorTecnico seleccionador;
     
     
     
@@ -38,6 +39,11 @@ public class Seleccion {
         }
         
         return retorno;
+    }
+    
+    
+    public String getNombre(){
+        return this.nombre;
     }
     
     

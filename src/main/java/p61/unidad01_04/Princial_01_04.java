@@ -13,11 +13,20 @@ public class Princial_01_04 {
     
     public static void main(String[] args) {
         
+        var alfaro= new DirectorTecnico();
+        alfaro.setNombre("Gustavo Alfaro");
+        alfaro.setNacionalidad("Argentina");
+        alfaro.setFechaNacimiento(1962);
+        alfaro.setYearsTrayectoria(20);
+        
+        
         var ecuador = new Seleccion();
         ecuador.codigoFIFA="ECU";
         ecuador.nombre="Federación Ecuatoriana de Fútbol (FEF)";
         ecuador.participacionesMundial=4;
-        System.out.println(ecuador.obtienePais());
+        ecuador.seleccionador=alfaro;
+        System.out.println(ecuador.obtienePais()+" Datos del D.T: "
+                +ecuador.seleccionador.mostrarInfo());
         
         var chile = new Seleccion();
         chile.codigoFIFA="CHI";
@@ -31,6 +40,7 @@ public class Princial_01_04 {
         enner.posicion="Goleador";
         enner.fechaNacimiento=1989;
         enner.equipo=ecuador;
+        System.out.println("Datos del D.T de Enner"+enner.equipo.seleccionador.nombre);
         
         var byron = new Jugador();
         byron.nombre="Byron Castillo";

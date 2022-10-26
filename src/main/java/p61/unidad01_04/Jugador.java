@@ -10,14 +10,14 @@ package p61.unidad01_04;
  */
 public class Jugador {
     
-    String nombre;
-    int fechaNacimiento;
-    String posicion;
-    Seleccion equipo;
+    private String nombre;
+    private int fechaNacimiento;
+    private String posicion;
+    private Seleccion equipo;
     
     
     public String mostrarInfo(){
-        return this.nombre+" juega en la selección de "+this.equipo.nombre;
+        return this.nombre+" juega en la selección de "+this.equipo.getNombre();
     }
     
     
