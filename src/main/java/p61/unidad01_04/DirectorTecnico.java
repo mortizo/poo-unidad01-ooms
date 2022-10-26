@@ -37,6 +37,22 @@ public class DirectorTecnico {
     public void setYearsTrayectoria(int yearsTrayectoria) {
         this.yearsTrayectoria = yearsTrayectoria;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public String getNacionalidad() {
+        return nacionalidad;
+    }
+
+    public int getYearsTrayectoria() {
+        return yearsTrayectoria;
+    }
     
     
     

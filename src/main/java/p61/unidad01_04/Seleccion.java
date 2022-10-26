@@ -40,10 +40,38 @@ public class Seleccion {
         
         return retorno;
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
     
     
     public String getNombre(){
         return this.nombre;
+    }
+
+    public String getCodigoFIFA() {
+        return codigoFIFA;
+    }
+
+    public void setCodigoFIFA(String codigoFIFA) {
+        this.codigoFIFA = codigoFIFA;
+    }
+
+    public int getParticipacionesMundial() {
+        return participacionesMundial;
+    }
+
+    public void setParticipacionesMundial(int participacionesMundial) {
+        this.participacionesMundial = participacionesMundial;
+    }
+
+    public DirectorTecnico getSeleccionador() {
+        return seleccionador;
+    }
+
+    public void setSeleccionador(DirectorTecnico seleccionador) {
+        this.seleccionador = seleccionador;
     }
     
     

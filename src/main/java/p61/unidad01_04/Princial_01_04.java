@@ -21,42 +21,41 @@ public class Princial_01_04 {
         
         
         var ecuador = new Seleccion();
-        ecuador.codigoFIFA="ECU";
-        ecuador.nombre="Federación Ecuatoriana de Fútbol (FEF)";
-        ecuador.participacionesMundial=4;
-        ecuador.seleccionador=alfaro;
+        ecuador.setCodigoFIFA("ECU");
+        ecuador.setNombre("Federación Ecuatoriana de Fútbol (FEF)");
+        ecuador.setParticipacionesMundial(4);
+        ecuador.setSeleccionador(alfaro);
+        
         System.out.println(ecuador.obtienePais()+" Datos del D.T: "
-                +ecuador.seleccionador.mostrarInfo());
+                +ecuador.getSeleccionador().getNombre());
         
         var chile = new Seleccion();
-        chile.codigoFIFA="CHI";
-        chile.nombre="Federación Chilena de Fútbol (FCF)";
-        chile.participacionesMundial=9;
-        System.out.println(ecuador.obtienePais());
-        
+        chile.setCodigoFIFA("CHI");
+        chile.setNombre("Federación Chilena de Fútbol (FCF)");
+        chile.setParticipacionesMundial(9);
         
         var enner = new Jugador();
-        enner.nombre="Enner Valencia";
-        enner.posicion="Goleador";
-        enner.fechaNacimiento=1989;
-        enner.equipo=ecuador;
-        System.out.println("Datos del D.T de Enner"+enner.equipo.seleccionador.nombre);
+        enner.setNombre("Enner Valencia");
+        enner.setPosicion("Goleador");
+        enner.setFechaNacimiento(1989);
+        enner.setEquipo(ecuador);
+        System.out.println("Datos del D.T de Enner "+enner.getEquipo().getSeleccionador().getNombre());
         
         var byron = new Jugador();
-        byron.nombre="Byron Castillo";
-        byron.posicion="Defensa";
-        byron.fechaNacimiento=1998;
-        byron.equipo=ecuador;
+        byron.setNombre("Byron Castillo");
+        byron.setPosicion("Defensa");
+        byron.setFechaNacimiento(1998);
+        byron.setEquipo(ecuador);
         
         var reyArturo = new Jugador();
-        reyArturo.nombre="Arturo Vidal";
-        reyArturo.posicion="Mediocampo";
-        reyArturo.fechaNacimiento=1987;
-        reyArturo.equipo=chile;
+        reyArturo.setNombre("Arturo Vidal");
+        reyArturo.setPosicion("Mediocampo");
+        reyArturo.setFechaNacimiento(1987);
+        reyArturo.setEquipo(chile);
         
         
         System.out.println(enner.mostrarInfo());
-        System.out.println(byron.mostrarInfo());
+        System.out.println(byron.mostrarInfoJugador());
         System.out.println(reyArturo.mostrarInfo());
         
         
