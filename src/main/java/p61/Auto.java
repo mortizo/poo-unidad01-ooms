@@ -9,8 +9,8 @@ package p61;
  * @author Mauricio Ortiz Ochoa
  */
 public class Auto {
-
-    String placa;
+    
+     String placa;
     String marca;
     String nombrePropietario;
     int year;
