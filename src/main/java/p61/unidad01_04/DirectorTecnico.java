@@ -6,44 +6,27 @@ package p61.unidad01_04;
 
 /**
  *
- * @author morti
+ * @author Mauricio Ortiz
  */
-public class DirectorTecnico {
+public class DirectorTecnico extends Persona{
     
-    private String nombre;
-    private int fechaNacimiento;
     private String nacionalidad;
     private int yearsTrayectoria;
     
-    public String mostrarInfo(){
-        return "El técnico se llama: "+this.nombre+" es de nacionalidad"
+    public String mostrarInfoDirectorTecnico(){
+        return "El técnico se llama: "+this.getNombre()+" es de nacionalidad"
                 +this.nacionalidad+" Nació en el año:"
-                +this.fechaNacimiento+" tiene "+this.yearsTrayectoria
+                +this.getFechaNacimiento()+" tiene "+this.yearsTrayectoria
                 +" años de trayectoria";
     }
-    
-    public void setNombre(String n){
-        this.nombre=n;
-    }
-    
+ 
     public void setNacionalidad(String n){
         this.nacionalidad=n;
     }
 
-    public void setFechaNacimiento(int fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
-    }
 
     public void setYearsTrayectoria(int yearsTrayectoria) {
         this.yearsTrayectoria = yearsTrayectoria;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public int getFechaNacimiento() {
-        return fechaNacimiento;
     }
 
     public String getNacionalidad() {

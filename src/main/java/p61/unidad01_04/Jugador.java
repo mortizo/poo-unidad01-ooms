@@ -9,10 +9,18 @@ package p61.unidad01_04;
  * @author morti
  */
 public class Jugador extends Persona{
-    
-
+   
     private String posicion;
     private Seleccion equipo;
+
+    public Jugador(String nombre, int fN, String posicion, Seleccion equipo) {
+        this.setNombre(nombre);
+        this.setFechaNacimiento(fN);
+        this.posicion = posicion;
+        this.equipo = equipo;
+    }
+    
+    
  
     public String mostrarInfoJugador(){
         return this.mostrarInfo()+" juega en la posición de: "+this.posicion

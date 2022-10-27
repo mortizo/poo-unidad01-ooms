@@ -20,11 +20,8 @@ public class Princial_01_04 {
         alfaro.setYearsTrayectoria(20);
         
         
-        var ecuador = new Seleccion();
-        ecuador.setCodigoFIFA("ECU");
-        ecuador.setNombre("Federación Ecuatoriana de Fútbol (FEF)");
-        ecuador.setParticipacionesMundial(4);
-        ecuador.setSeleccionador(alfaro);
+        var ecuador = new Seleccion("ECU","Federación Ecuatoriana de Fútbol (FEF)"
+                ,4,alfaro);
         
         System.out.println(ecuador.obtienePais()+" Datos del D.T: "
                 +ecuador.getSeleccionador().getNombre());
@@ -57,6 +54,10 @@ public class Princial_01_04 {
         System.out.println(enner.mostrarInfo());
         System.out.println(byron.mostrarInfoJugador());
         System.out.println(reyArturo.mostrarInfo());
+        System.out.println(alfaro.mostrarInfo());
+        System.out.println(alfaro.mostrarInfoDirectorTecnico());
+        
+        
         
         
         

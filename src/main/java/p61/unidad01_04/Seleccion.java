@@ -15,7 +15,12 @@ public class Seleccion {
     private int participacionesMundial;
     private DirectorTecnico seleccionador;
     
-    
+    public Seleccion(String cF, String n, int nP, DirectorTecnico dt){
+        this.codigoFIFA=cF;
+        this.nombre=n;
+        this.participacionesMundial=nP;
+        this.seleccionador=dt;
+    }
     
     public String obtienePais(){
         var retorno="Desconocido";
