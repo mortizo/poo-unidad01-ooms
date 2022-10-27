@@ -12,14 +12,13 @@ public class DirectorTecnico extends Persona{
     
     private String nacionalidad;
     private int yearsTrayectoria;
-    
-    public String mostrarInfoDirectorTecnico(){
-        return "El técnico se llama: "+this.getNombre()+" es de nacionalidad"
-                +this.nacionalidad+" Nació en el año:"
-                +this.getFechaNacimiento()+" tiene "+this.yearsTrayectoria
-                +" años de trayectoria";
+
+    public DirectorTecnico(String nacionalidad, int yearsTrayectoria) {
+        this.nacionalidad = nacionalidad;
+        this.yearsTrayectoria = yearsTrayectoria;
     }
- 
+    
+   
     public void setNacionalidad(String n){
         this.nacionalidad=n;
     }
@@ -35,6 +34,11 @@ public class DirectorTecnico extends Persona{
 
     public int getYearsTrayectoria() {
         return yearsTrayectoria;
+    }
+
+    @Override
+    public String mostrarInfo() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     

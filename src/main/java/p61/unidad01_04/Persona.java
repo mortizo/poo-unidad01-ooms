@@ -6,19 +6,14 @@ package p61.unidad01_04;
 
 /**
  *
- * @author morti
+ * @author Mauricio Ortiz Ochoa
  */
-public class Persona {
+public abstract class Persona {
     
     private String nombre;
     private int fechaNacimiento;
-    
-    public String mostrarInfo(){
-        return this.nombre+" nació en el año: "+this.fechaNacimiento;
-    }
-    
-    
-    
+
+    public abstract String mostrarInfo();
 
     public String getNombre() {
         return nombre;

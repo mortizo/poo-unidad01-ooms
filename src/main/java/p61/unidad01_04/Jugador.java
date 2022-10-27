@@ -20,13 +20,17 @@ public class Jugador extends Persona{
         this.equipo = equipo;
     }
     
-    
- 
-    public String mostrarInfoJugador(){
-        return this.mostrarInfo()+" juega en la posición de: "+this.posicion
-                +" pertenece al esquipo de: "+this.equipo.getNombre();
+    public Jugador(String nombre, String posicion, Seleccion equipo) {
+        this.setNombre(nombre);
+        this.posicion = posicion;
+        this.equipo = equipo;
     }
-
+    
+    public Jugador(String nombre, String posicion) {
+        this.setNombre(nombre);
+        this.posicion = posicion;
+    }
+ 
     public String getPosicion() {
         return posicion;
     }
@@ -42,9 +46,13 @@ public class Jugador extends Persona{
     public void setEquipo(Seleccion equipo) {
         this.equipo = equipo;
     }
-    
-    
-    
-    
+
+    @Override
+    public String mostrarInfo() {
+        return "El juagador se llama: "+this.getNombre()+" nació en: "
+                +this.getFechaNacimiento()+" juega de: "+this.posicion
+                +" y es seleccionado de "+this.equipo;
+    }
+
     
 }
