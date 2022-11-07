@@ -4,6 +4,9 @@
  */
 package p61.unidad01_04;
 
+import java.time.LocalDate;
+import java.time.Month;
+
 /**
  *
  * @author morti
@@ -12,7 +15,7 @@ public class Princial_01_04 {
     
     
     public static void main(String[] args) {
-        
+        /*
         var alfaro= new DirectorTecnico("Argentina",20);
         alfaro.setNombre("Gustavo Alfaro");
         alfaro.setFechaNacimiento(1962);
@@ -46,6 +49,16 @@ public class Princial_01_04 {
         System.out.println(alfaro.mostrarInfo());
         System.out.println(shurer.mostrarInfo());
         
+        */
+        
+        var mauricio = new Dueño("0103667785","Mauricio Ortiz Ochoa", "0984357604");
+        var pilichi = new Mascota("Pilichi","Gato","Mestizo",3,mauricio);
+       // var atencion = new Atencion(LocalDate.now(),"Dr. Masache",45,pilichi);
+        var atencion = new Atencion(LocalDate.of(2022, Month.OCTOBER, 7),"Dr. Masache",45,pilichi);
+        System.out.println(mauricio.toString());
+        System.out.println(pilichi.toString());
+        System.out.println(atencion.toString());
+        System.out.println("El día de la atencion fué: "+atencion.getFecha().getDayOfWeek().name());
         
         
         
